@@ -29,7 +29,7 @@ platform6 = loadImage("images/platform6.png")
 
 jumpSound = loadSound("jump.ogg");
 leftSound = loadSound("left-right-sound.wav");
-
+rightSound = loadSound("left-right-sound.wav");
 
 
 
@@ -77,7 +77,7 @@ function draw() {
   if(keyDown("right"))
   {
     player.x = player.x + 7;
-    leftSound.play();
+    rightSound.play();
   }
 
   player.velocityY = player.velocityY +0.8;
